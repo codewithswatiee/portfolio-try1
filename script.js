@@ -58,6 +58,31 @@ function circleMouseFollower(xscale, yscale) {
     })
 }
 
+var openMenuBtn = document.querySelector('#menuOpen');
+var tl2 = gsap.timeline()
+tl2.to('#menu', {
+    right: 0,
+    duration: .02,
+})
+.from('#menu a', {
+    x: 100,
+    stagger: .4,
+    duration: .7,
+    opacity: 0,
+})
+tl2.pause()
+
+openMenuBtn.addEventListener('click', function(){
+    gsap.to(openMenuBtn, {
+        y: 10,
+        opacity: 0,
+    })
+    tl2.play()
+})
+
+window.addEventListener('scroll', function() {
+    tl2.reverse()
+})
 
 
 // function calls
@@ -88,3 +113,25 @@ document.querySelectorAll('.elem').forEach(function (elem){
         });
     });
 });
+
+
+function JSClock(elem) {
+    const time = new Date();
+    const hour = time.getHours();
+    const minute = time.getMinutes();
+    const second = time.getSeconds();
+    let temp = String(hour % 12);
+    if (temp === "0") {
+        temp = "12";
+    }
+    temp += (minute < 10 ? ":0" : ":") + minute;
+    temp += (second < 10 ? ":0" : ":") + second;
+    temp += hour >= 12 ? " P.M." : " A.M.";
+
+    elem.innerHTML = temp;
+}
+    
+const timeElement = document.querySelector('#time');
+setInterval(() => JSClock(timeElement), 1000);
+    
+
