@@ -4,31 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="locomotive.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="minicircle"></div>
     <div id="main">
         <div id="hero">
             <div id="nav">
-                <a href="#">Swati Verma</a>
+                <a href="#" id="name">Swati Verma</a>
                 <h4>+MENU</h4>
             </div>
             <div id="heading">
-                <h1>Front-End</h1>
+                <div class="bounding">
+                    <h1 class="boundingelem">Front-End</h1>
+                </div>
                 <div class="blocktext">
-                    <h1 id="sech1">Developer</h1>
-                    <h5>Based in India</h5>
+                    <div class="bounding">
+                        <h1 class="boundingelem" id="sech1">Developer</h1>
+                    </div>
+                    <div class="bounding">
+                        <h5 class="boundingelem">Based in India</h5>
+                    </div>
                 </div>
             </div>
             <div id="sideHeadings">
-                <h5>available for freelancing</h5>
+                <div class="bounding">
+                    <h5 class="boundingelem">available for freelance</h5>
+                </div>
             </div>
             <div id="herofooter">
-                <a href="https://github.com/codewithswatiee">Github <i class="ri-arrow-right-up-line"></i></a>
-                <a href="https://www.linkedin.com/in/swati-verma3124/">LinkedIn <i class="ri-arrow-right-up-line"></i></a>
+                <a href="https://github.com/codewithswatiee" target="_blank">Github <i class="ri-github-line"></i></a>
+                <a href="https://www.linkedin.com/in/swati-verma3124/" target="_blank">LinkedIn <i class="ri-linkedin-box-line"></i></a>
+                <div id="iconset">
+                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="second">
+            <div class="elem">
+                <img src="front-end.png" alt="front-end img">
+                <h1>Front-End Projects</h1>
+                <div id="frontend">
+                    <i class="ri-html5-line"></i>
+                    <i class="ri-css3-line"></i>
+                    <i class="ri-javascript-line"></i>
+                </div>
+            </div>
+            <div class="elem">
+                <img src="python.png" alt="python">
+                <h1>Python Projects</h1>
+                <i class="ri-code-s-slash-line"></i>
+            </div>
+            <div class="elem elemlast">
+                <img src="achievements.png" alt="achievements">
+                <h1>Certifications & Achievements</h1>
+                <i class="ri-award-fill"></i>
+            </div>
+
+        </div>
+
+        <div id="aboutme">
+            <img src="me.jpg" alt="me">
+            <div id="textabout">
+                <h5>(About Me<i class="ri-arrow-go-back-line"></i>)</h5>
+                <p>
+                    Greetings! I'm Swati Verma, a third-year B.Tech student with a passion for blockchain technology. Currently studying at KJSIT, Mumbai, my journey into tech began with an internship at Prodigy Intech, where I earned recognition for my contributions. Proudly, I led the development of a crop disease detection website for a college project, showcasing my skills and teamwork abilities. My educational background spans from Army Goodwill Public School, Rajouri, to Jammu, before settling in Mumbai. Focusing front-end development and Python, I aspire to merge blockchain with AI. Open to freelance opportunities, I'm driven by the philosophy that destiny is shaped by the steps we take.
+                    <br>
+                    Thank you for visiting my portfolio; I'm excited to connect with you!
+
+
+                </p>
+                <a href="mailto:swativx@gmail.com">Let's talk</a>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="left">
+                <h5>2024 &copy;</h5>
+                <h5>0:05 AM EST</h5>
+            </div>
+            <div id="right">
+                <a href="#">Devfolio</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
             </div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
