@@ -10,9 +10,9 @@ html, body{
     height: 100%
 }
 #minicircle{
-    width: 10px;
+    width: 15px;
     z-index: 9999;
-    height: 10px;
+    height: 15px;
     position: absolute;
     border-radius: 50%;
     background-color: #c2bebe;
@@ -45,6 +45,30 @@ html, body{
     font-weight: 800;
     text-decoration: none;
     font-size: 19px;
+}
+/* 
+    something to add later
+    height: 100%;
+    width: 40%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0; */
+#menu{
+    height: 10%;
+    width: 50%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px
+}
+#menu a:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 .bounding {
     width: fit-content;
@@ -185,7 +209,7 @@ html, body{
     position: absolute;
     z-index: 999;
     height: 97%;
-    display: none;
+    opacity: 0;
 }
 #aboutme{
     width: 100%;
